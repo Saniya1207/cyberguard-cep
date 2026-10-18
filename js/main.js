@@ -113,6 +113,27 @@ function initMobileNav() {
       navLinks.classList.toggle('open');
       const isOpen = navLinks.classList.contains('open');
       toggleBtn.setAttribute('aria-expanded', isOpen);
+      toggleBtn.innerHTML = isOpen 
+        ? '<i class="fa-solid fa-xmark"></i>' 
+        : '<i class="fa-solid fa-bars"></i>';
+    });
+
+    // Auto-close menu on link click
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+        toggleBtn.setAttribute('aria-expanded', 'false');
+        toggleBtn.innerHTML = '<i class="fa-solid fa-bars"></i>';
+      });
+    });
+
+    // Close menu when tapping outside
+    document.addEventListener('click', (e) => {
+      if (!navLinks.contains(e.target) && !toggleBtn.contains(e.target) && navLinks.classList.contains('open')) {
+        navLinks.classList.remove('open');
+        toggleBtn.setAttribute('aria-expanded', 'false');
+        toggleBtn.innerHTML = '<i class="fa-solid fa-bars"></i>';
+      }
     });
   }
 }
