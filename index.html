@@ -36,10 +36,6 @@
         <span>CyberGuard <span class="brand-badge" data-i18n="brand.badge">CEP Initiative</span></span>
       </a>
 
-      <button class="mobile-toggle" aria-label="Toggle navigation" aria-expanded="false">
-        <i class="fa-solid fa-bars"></i>
-      </button>
-
       <ul class="nav-links">
         <li><a href="index.html" class="nav-link active"><i class="fa-solid fa-bug"></i> <span data-i18n="nav.problem">The Problem</span></a></li>
         <li><a href="cases-and-media.html" class="nav-link"><i class="fa-solid fa-video"></i> <span data-i18n="nav.cases">Real Cases & Videos</span></a></li>
@@ -47,7 +43,7 @@
         <li><a href="solutions.html#interactive-sim" class="btn btn-primary" style="padding: 0.45rem 0.9rem; font-size: 0.82rem;"><i class="fa-solid fa-crosshairs"></i> <span data-i18n="nav.test">Test Your Skills</span></a></li>
       </ul>
 
-      <!-- Controls Hub: Language Switcher + Theme Toggle -->
+      <!-- Controls Hub: Language Switcher + Theme Toggle + Mobile Hamburger -->
       <div class="nav-controls">
         <div class="lang-switch" title="Change Language / भाषा बदला">
           <button class="lang-btn active" data-lang="en">EN</button>
@@ -57,6 +53,10 @@
 
         <button class="theme-toggle-btn" aria-label="Toggle dark/light theme" title="Toggle theme">
           <i class="fa-solid fa-moon"></i>
+        </button>
+
+        <button class="mobile-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <i class="fa-solid fa-bars"></i>
         </button>
       </div>
     </div>
@@ -321,27 +321,27 @@
   <!-- Community Impact & Workshop Section -->
   <section style="padding: 4rem 0;">
     <div class="container">
-      <div style="background-color: var(--bg-surface); border: 1px solid var(--border-color); border-radius: var(--radius-md); overflow: hidden; display: grid; grid-template-columns: 1fr 1fr; align-items: center; box-shadow: var(--shadow-sm);">
-        <div style="padding: 2.5rem;">
+      <div class="mission-card">
+        <div class="mission-content">
           <span class="section-tag success" data-i18n="ws.tag">CEP Objectives</span>
           <h3 style="font-size: 1.6rem; margin: 0.65rem 0 0.85rem; color: var(--text-main);" data-i18n="ws.title">Our Mission in Community Engagement</h3>
           <p style="color: var(--text-muted); font-size: 0.92rem; margin-bottom: 1.25rem;" data-i18n="ws.desc">
             As part of our Community Engagement Project (CEP), we are bridging the knowledge gap between sophisticated cybercrime operations and vulnerable community members—specifically senior citizens, students entering the digital economy, and neighborhood businesses.
           </p>
-          <div style="display: flex; flex-direction: column; gap: 0.65rem;">
-            <div style="display: flex; align-items: center; gap: 0.65rem; color: var(--text-body); font-size: 0.88rem;">
-              <i class="fa-solid fa-circle-check" style="color: var(--success);"></i> <span data-i18n="ws.i1">Conducting peer workshops and scam detection drills.</span>
+          <div class="mission-list">
+            <div class="mission-item">
+              <i class="fa-solid fa-circle-check"></i> <span data-i18n="ws.i1">Conducting peer workshops and scam detection drills.</span>
             </div>
-            <div style="display: flex; align-items: center; gap: 0.65rem; color: var(--text-body); font-size: 0.88rem;">
-              <i class="fa-solid fa-circle-check" style="color: var(--success);"></i> <span data-i18n="ws.i2">Educating shop owners on customer data protection compliance.</span>
+            <div class="mission-item">
+              <i class="fa-solid fa-circle-check"></i> <span data-i18n="ws.i2">Educating shop owners on customer data protection compliance.</span>
             </div>
-            <div style="display: flex; align-items: center; gap: 0.65rem; color: var(--text-body); font-size: 0.88rem;">
-              <i class="fa-solid fa-circle-check" style="color: var(--success);"></i> <span data-i18n="ws.i3">Spreading the national 1930 Cyber Fraud Helpline across localities.</span>
+            <div class="mission-item">
+              <i class="fa-solid fa-circle-check"></i> <span data-i18n="ws.i3">Spreading the national 1930 Cyber Fraud Helpline across localities.</span>
             </div>
           </div>
         </div>
-        <div style="height: 100%; min-height: 300px;">
-          <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=800&q=80" alt="Students and community learning cybersecurity in workshop" style="width: 100%; height: 100%; object-fit: cover;">
+        <div class="mission-visual">
+          <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=800&q=80" alt="Students and community learning cybersecurity in workshop">
         </div>
       </div>
     </div>

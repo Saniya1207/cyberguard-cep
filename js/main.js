@@ -109,16 +109,21 @@ function initMobileNav() {
   const navLinks = document.querySelector('.nav-links');
 
   if (toggleBtn && navLinks) {
-    toggleBtn.addEventListener('click', () => {
-      navLinks.classList.toggle('open');
-      const isOpen = navLinks.classList.contains('open');
-      toggleBtn.setAttribute('aria-expanded', isOpen);
+    function toggleMenu(e) {
+      if (e) {
+        e.preventDefault();
+        e.stopPropagation();
+      }
+      const isOpen = navLinks.classList.toggle('open');
+      toggleBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
       toggleBtn.innerHTML = isOpen 
         ? '<i class="fa-solid fa-xmark"></i>' 
         : '<i class="fa-solid fa-bars"></i>';
-    });
+    }
 
-    // Auto-close menu on link click
+    toggleBtn.addEventListener('click', toggleMenu);
+
+    // Auto-close menu when tapping any link
     navLinks.querySelectorAll('a').forEach(link => {
       link.addEventListener('click', () => {
         navLinks.classList.remove('open');
@@ -127,9 +132,18 @@ function initMobileNav() {
       });
     });
 
-    // Close menu when tapping outside
+    // Close menu when tapping anywhere outside
     document.addEventListener('click', (e) => {
-      if (!navLinks.contains(e.target) && !toggleBtn.contains(e.target) && navLinks.classList.contains('open')) {
+      if (navLinks.classList.contains('open') && !navLinks.contains(e.target) && !toggleBtn.contains(e.target)) {
+        navLinks.classList.remove('open');
+        toggleBtn.setAttribute('aria-expanded', 'false');
+        toggleBtn.innerHTML = '<i class="fa-solid fa-bars"></i>';
+      }
+    });
+
+    // Close on escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && navLinks.classList.contains('open')) {
         navLinks.classList.remove('open');
         toggleBtn.setAttribute('aria-expanded', 'false');
         toggleBtn.innerHTML = '<i class="fa-solid fa-bars"></i>';
