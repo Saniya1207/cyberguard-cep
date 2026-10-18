@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CyberGuard CEP | Phishing, Social Engineering & Data Protection</title>
+  <meta name="description" content="Community Engagement Project on digital fraud awareness, social engineering attack tactics, and customer data privacy defense.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Emergency Helpline Notification Bar -->
+  <div class="alert-strip">
+    <div class="container">
+      <div>
+        <i class="fa-solid fa-triangle-exclamation"></i> 
+        <strong data-i18n="alert.title">Cyber Fraud Emergency:</strong> 
+        <span data-i18n="alert.desc">If you lost money in an online scam, report within the golden hour.</span>
+      </div>
+      <div>
+        <span data-i18n="alert.helpline">National Cyber Crime Helpline:</span> 
+        <a href="tel:1930" class="helpline-pill"><i class="fa-solid fa-phone"></i> <span data-i18n="alert.dial">Dial 1930</span></a> 
+        or visit <a href="https://cybercrime.gov.in" target="_blank" rel="noopener">cybercrime.gov.in</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation Header -->
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a href="index.html" class="brand-logo">
+        <div class="brand-icon">
+          <i class="fa-solid fa-shield-halved"></i>
+        </div>
+        <span>CyberGuard <span class="brand-badge" data-i18n="brand.badge">CEP Initiative</span></span>
+      </a>
+
+      <button class="mobile-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link active"><i class="fa-solid fa-bug"></i> <span data-i18n="nav.problem">The Problem</span></a></li>
+        <li><a href="cases-and-media.html" class="nav-link"><i class="fa-solid fa-video"></i> <span data-i18n="nav.cases">Real Cases & Videos</span></a></li>
+        <li><a href="solutions.html" class="nav-link"><i class="fa-solid fa-lock"></i> <span data-i18n="nav.solutions">Solutions & Simulator</span></a></li>
+        <li><a href="solutions.html#interactive-sim" class="btn btn-primary" style="padding: 0.45rem 0.9rem; font-size: 0.82rem;"><i class="fa-solid fa-crosshairs"></i> <span data-i18n="nav.test">Test Your Skills</span></a></li>
+      </ul>
+
+      <!-- Controls Hub: Language Switcher + Theme Toggle -->
+      <div class="nav-controls">
+        <div class="lang-switch" title="Change Language / भाषा बदला">
+          <button class="lang-btn active" data-lang="en">EN</button>
+          <button class="lang-btn" data-lang="hi">हिंदी</button>
+          <button class="lang-btn" data-lang="mr">मराठी</button>
+        </div>
+
+        <button class="theme-toggle-btn" aria-label="Toggle dark/light theme" title="Toggle theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <div class="hero-tag">
+          <i class="fa-solid fa-bullhorn"></i> <span data-i18n="hero.tag">Community Engagement Project (CEP)</span>
+        </div>
+        <h1 class="hero-title" data-i18n="hero.title">
+          The Human Firewall: Confronting Phishing, Social Engineering & Data Exploitation
+        </h1>
+        <p class="hero-lead" data-i18n="hero.lead">
+          Cybercriminals don't just hack firewalls anymore; they hack human psychology. Discover how deceptive emails, fake emergency calls, and leaked customer databases endanger families, students, and businesses—and how we fight back.
+        </p>
+        <div class="hero-actions">
+          <a href="#problem-breakdown" class="btn btn-danger">
+            <i class="fa-solid fa-magnifying-glass"></i> <span data-i18n="hero.btn.problem">Unpack The Problem</span>
+          </a>
+          <a href="cases-and-media.html" class="btn btn-secondary">
+            <i class="fa-brands fa-youtube"></i> <span data-i18n="hero.btn.videos">Watch National Scams</span>
+          </a>
+          <a href="solutions.html" class="btn btn-outline">
+            <i class="fa-solid fa-shield-virus"></i> <span data-i18n="hero.btn.solutions">View Solutions</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-image-card">
+          <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=1000&q=80" alt="Cyber security digital shield visualization">
+          <div class="image-overlay-badge">
+            <i class="fa-solid fa-circle-exclamation"></i>
+            <div>
+              <h4 data-i18n="hero.badge.title">82% of Breaches Involve Humans</h4>
+              <p data-i18n="hero.badge.desc">Phishing and pretexting manipulate panic and urgency before logic can intervene.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Metrics Strip -->
+  <div class="metrics-strip">
+    <div class="container">
+      <div class="metrics-grid">
+        <div class="metric-item">
+          <span class="metric-number danger" data-i18n="metric1.num">3.4 Billion</span>
+          <span class="metric-label" data-i18n="metric1.label">Phishing Emails Sent Globally Every Day</span>
+        </div>
+        <div class="metric-item">
+          <span class="metric-number amber" data-i18n="metric2.num">₹1,750+ Cr</span>
+          <span class="metric-label" data-i18n="metric2.label">Reported Indian Digital Financial Frauds in 2024</span>
+        </div>
+        <div class="metric-item">
+          <span class="metric-number" data-i18n="metric3.num">91%</span>
+          <span class="metric-label" data-i18n="metric3.label">Of Targeted Attacks Start With Spear Phishing</span>
+        </div>
+        <div class="metric-item">
+          <span class="metric-number" style="color: var(--success);" data-i18n="metric4.num">10 Minutes</span>
+          <span class="metric-label" data-i18n="metric4.label">Critical Golden Window to Freeze Stolen UPI / Bank Funds</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Core Problem Breakdown Section -->
+  <section class="problems-section" id="problem-breakdown">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag danger"><i class="fa-solid fa-triangle-exclamation"></i> <span data-i18n="prob.tag">The Problem Spectrum</span></span>
+        <h2 class="section-title" data-i18n="prob.title">How Cybercriminals Weaponize Trust & Identity</h2>
+        <p class="section-desc" data-i18n="prob.desc">
+          Modern cyber threats exploit our natural inclination to trust authority, help others, or react swiftly to emergencies. Here are the three interconnected threats endangering our community:
+        </p>
+      </div>
+
+      <div class="cards-grid">
+        <!-- Threat 1: Phishing & Smishing -->
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=600&q=80" alt="Cyber phishing digital code" class="card-img-top">
+          <div class="card-icon red">
+            <i class="fa-solid fa-fish-fins"></i>
+          </div>
+          <h3 class="card-title" data-i18n="card1.title">1. Phishing & Smishing</h3>
+          <p class="card-text" data-i18n="card1.desc">
+            Deceptive digital communications crafted to clone legitimate entities like banks, utility boards, or government departments. Scammers embed malicious spoofed links to capture credentials.
+          </p>
+          <div class="threat-meta">
+            <div class="threat-item">
+              <span style="color: var(--danger); margin-right: 0.3rem;">●</span> <span data-i18n="card1.item1">Smishing: Fake SMS claiming electricity disconnection by 9:30 PM.</span>
+            </div>
+            <div class="threat-item">
+              <span style="color: var(--danger); margin-right: 0.3rem;">●</span> <span data-i18n="card1.item2">Clone Phishing: Replica bank login portals designed to steal OTPs.</span>
+            </div>
+            <div class="threat-item">
+              <span style="color: var(--danger); margin-right: 0.3rem;">●</span> <span data-i18n="card1.item3">QR Code Trap: Tricking victims into scanning QR codes to 'receive money'.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Threat 2: Social Engineering -->
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=600&q=80" alt="Social engineering manipulation" class="card-img-top">
+          <div class="card-icon amber">
+            <i class="fa-solid fa-brain"></i>
+          </div>
+          <h3 class="card-title" data-i18n="card2.title">2. Social Engineering</h3>
+          <p class="card-text" data-i18n="card2.desc">
+            The psychological art of manipulating people into voluntarily surrendering confidential data, passwords, or authorizing unauthorized money transfers through fabricated narratives.
+          </p>
+          <div class="threat-meta">
+            <div class="threat-item">
+              <span style="color: var(--warning); margin-right: 0.3rem;">●</span> <span data-i18n="card2.item1">'Digital Arrest' Scams: Impersonating police/CBI officers on video calls.</span>
+            </div>
+            <div class="threat-item">
+              <span style="color: var(--warning); margin-right: 0.3rem;">●</span> <span data-i18n="card2.item2">Pretexting: Posing as hospital staff claiming a family emergency.</span>
+            </div>
+            <div class="threat-item">
+              <span style="color: var(--warning); margin-right: 0.3rem;">●</span> <span data-i18n="card2.item3">Authority Bias: Impersonating corporate leadership or customs inspectors.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Threat 3: Customer Data Compromise -->
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=600&q=80" alt="Server rack customer data breach" class="card-img-top">
+          <div class="card-icon blue">
+            <i class="fa-solid fa-database"></i>
+          </div>
+          <h3 class="card-title" data-i18n="card3.title">3. Customer Data Compromise</h3>
+          <p class="card-text" data-i18n="card3.desc">
+            When organizations fail to protect Personally Identifiable Information (PII), customer records end up for sale on dark web forums—supplying scammers with names, phone numbers, and Aadhaar numbers.
+          </p>
+          <div class="threat-meta">
+            <div class="threat-item">
+              <span style="color: var(--primary); margin-right: 0.3rem;">●</span> <span data-i18n="card3.item1">Targeted Spearing: Using leaked data to make fake calls shockingly believable.</span>
+            </div>
+            <div class="threat-item">
+              <span style="color: var(--primary); margin-right: 0.3rem;">●</span> <span data-i18n="card3.item2">SIM Swapping: Stealing mobile identity using leaked customer documentation.</span>
+            </div>
+            <div class="threat-item">
+              <span style="color: var(--primary); margin-right: 0.3rem;">●</span> <span data-i18n="card3.item3">Regulatory Fines: Legal penalties under India's DPDP Act 2023.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Problem Anatomy: The Social Engineering Lifecycle -->
+  <section class="comparison-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-diagram-project"></i> <span data-i18n="loop.tag">Anatomy of an Attack</span></span>
+        <h2 class="section-title" data-i18n="loop.title">The 4-Stage Social Engineering Attack Loop</h2>
+        <p class="section-desc" data-i18n="loop.desc">
+          Attackers follow a deliberate, calculated methodology to dismantle the victim's natural skepticism.
+        </p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.25rem; margin-bottom: 3rem;">
+        <div class="comp-box">
+          <h4 style="font-size: 1.1rem; color: var(--text-main); margin-bottom: 0.4rem;" data-i18n="loop.s1.title">01 Reconnaissance</h4>
+          <p style="font-size: 0.88rem; color: var(--text-muted);" data-i18n="loop.s1.desc">Attacker searches social media, public databases, or dark web breaches to identify target's full name, employer, bank, and contacts.</p>
+        </div>
+
+        <div class="comp-box">
+          <h4 style="font-size: 1.1rem; color: var(--text-main); margin-bottom: 0.4rem;" data-i18n="loop.s2.title">02 Pretext Fabrication</h4>
+          <p style="font-size: 0.88rem; color: var(--text-muted);" data-i18n="loop.s2.desc">Crafting a believable scenario: 'Your account is frozen', 'Urgent tax refund waiting', or 'Your electric power will be cut tonight'.</p>
+        </div>
+
+        <div class="comp-box">
+          <h4 style="font-size: 1.1rem; color: var(--text-main); margin-bottom: 0.4rem;" data-i18n="loop.s3.title">03 High-Pressure Trigger</h4>
+          <p style="font-size: 0.88rem; color: var(--text-muted);" data-i18n="loop.s3.desc">The attacker forces an immediate deadline. Rushed targets skip critical logic and follow instructions without consulting family.</p>
+        </div>
+
+        <div class="comp-box">
+          <h4 style="font-size: 1.1rem; color: var(--text-main); margin-bottom: 0.4rem;" data-i18n="loop.s4.title">04 Data / Money Extraction</h4>
+          <p style="font-size: 0.88rem; color: var(--text-muted);" data-i18n="loop.s4.desc">The victim shares the OTP, installs AnyDesk/TeamViewer remote screen-sharing tools, or completes an irreversible UPI transaction.</p>
+        </div>
+      </div>
+
+      <!-- Problem vs Solution Direct Comparison Grid -->
+      <div class="comparison-grid">
+        <div class="comp-box problem">
+          <div class="comp-header">
+            <span class="comp-icon danger"><i class="fa-solid fa-xmark"></i></span>
+            <h3 data-i18n="comp.prob.title">The Problem: Why Traditional Defenses Fail</h3>
+          </div>
+          <ul class="comp-list">
+            <li class="comp-item">
+              <div class="comp-icon danger"><i class="fa-solid fa-ban"></i></div>
+              <div class="comp-details">
+                <strong data-i18n="comp.prob.1.t">Firewalls Don't Stop Convincing Lies</strong>
+                <p data-i18n="comp.prob.1.d">An employee or citizen will open a door when convinced the person knocking is legitimate police or banking staff.</p>
+              </div>
+            </li>
+            <li class="comp-item">
+              <div class="comp-icon danger"><i class="fa-solid fa-ban"></i></div>
+              <div class="comp-details">
+                <strong data-i18n="comp.prob.2.t">Customer Data Neglected in Plaintext</strong>
+                <p data-i18n="comp.prob.2.d">Small shops, colleges, and local service providers store customer contacts in unencrypted spreadsheets and unsecured clouds.</p>
+              </div>
+            </li>
+            <li class="comp-item">
+              <div class="comp-icon danger"><i class="fa-solid fa-ban"></i></div>
+              <div class="comp-details">
+                <strong data-i18n="comp.prob.3.t">Stigma and Hesitation to Report</strong>
+                <p data-i18n="comp.prob.3.d">Victims often feel embarrassed after falling for scams, delaying reports past the vital 2-hour recovery window.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="comp-box solution">
+          <div class="comp-header">
+            <span class="comp-icon success"><i class="fa-solid fa-check"></i></span>
+            <h3 data-i18n="comp.sol.title">The Solution: The Community Defense Model</h3>
+          </div>
+          <ul class="comp-list">
+            <li class="comp-item">
+              <div class="comp-icon success"><i class="fa-solid fa-check"></i></div>
+              <div class="comp-details">
+                <strong data-i18n="comp.sol.1.t">Verification Before Action ('Zero Trust')</strong>
+                <p data-i18n="comp.sol.1.d">Always disconnect unexpected calls and verify independently via official numbers on bank cards or official websites.</p>
+              </div>
+            </li>
+            <li class="comp-item">
+              <div class="comp-icon success"><i class="fa-solid fa-check"></i></div>
+              <div class="comp-details">
+                <strong data-i18n="comp.sol.2.t">Customer Data Privacy by Design (DPDP)</strong>
+                <p data-i18n="comp.sol.2.d">Mask phone numbers, mandate Multi-Factor Authentication (MFA), and purge inactive client records securely.</p>
+              </div>
+            </li>
+            <li class="comp-item">
+              <div class="comp-icon success"><i class="fa-solid fa-check"></i></div>
+              <div class="comp-details">
+                <strong data-i18n="comp.sol.3.t">Empowered Community Reporting</strong>
+                <p data-i18n="comp.sol.3.d">Awareness drives speed. Dialing 1930 immediately blocks scammer beneficiary bank accounts across national financial networks.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Quick Action CTA -->
+      <div style="text-align: center; margin-top: 3rem;">
+        <h3 style="font-size: 1.35rem; margin-bottom: 0.75rem; color: var(--text-main);" data-i18n="cta.cases.title">Ready to examine real cases across the country?</h3>
+        <p style="color: var(--text-muted); margin-bottom: 1.25rem;" data-i18n="cta.cases.desc">See real video breakdowns of KYC scams, UPI traps, and digital arrest cases.</p>
+        <a href="cases-and-media.html" class="btn btn-primary" style="font-size: 0.95rem; padding: 0.75rem 1.75rem;">
+          <i class="fa-solid fa-video"></i> <span data-i18n="cta.cases.btn">Explore Real Cases & Videos</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Community Impact & Workshop Section -->
+  <section style="padding: 4rem 0;">
+    <div class="container">
+      <div style="background-color: var(--bg-surface); border: 1px solid var(--border-color); border-radius: var(--radius-md); overflow: hidden; display: grid; grid-template-columns: 1fr 1fr; align-items: center; box-shadow: var(--shadow-sm);">
+        <div style="padding: 2.5rem;">
+          <span class="section-tag success" data-i18n="ws.tag">CEP Objectives</span>
+          <h3 style="font-size: 1.6rem; margin: 0.65rem 0 0.85rem; color: var(--text-main);" data-i18n="ws.title">Our Mission in Community Engagement</h3>
+          <p style="color: var(--text-muted); font-size: 0.92rem; margin-bottom: 1.25rem;" data-i18n="ws.desc">
+            As part of our Community Engagement Project (CEP), we are bridging the knowledge gap between sophisticated cybercrime operations and vulnerable community members—specifically senior citizens, students entering the digital economy, and neighborhood businesses.
+          </p>
+          <div style="display: flex; flex-direction: column; gap: 0.65rem;">
+            <div style="display: flex; align-items: center; gap: 0.65rem; color: var(--text-body); font-size: 0.88rem;">
+              <i class="fa-solid fa-circle-check" style="color: var(--success);"></i> <span data-i18n="ws.i1">Conducting peer workshops and scam detection drills.</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 0.65rem; color: var(--text-body); font-size: 0.88rem;">
+              <i class="fa-solid fa-circle-check" style="color: var(--success);"></i> <span data-i18n="ws.i2">Educating shop owners on customer data protection compliance.</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 0.65rem; color: var(--text-body); font-size: 0.88rem;">
+              <i class="fa-solid fa-circle-check" style="color: var(--success);"></i> <span data-i18n="ws.i3">Spreading the national 1930 Cyber Fraud Helpline across localities.</span>
+            </div>
+          </div>
+        </div>
+        <div style="height: 100%; min-height: 300px;">
+          <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=800&q=80" alt="Students and community learning cybersecurity in workshop" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="brand-logo" style="margin-bottom: 0.85rem;">
+            <div class="brand-icon"><i class="fa-solid fa-shield-halved"></i></div>
+            <span>CyberGuard CEP</span>
+          </div>
+          <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 1.25rem;" data-i18n="footer.desc">
+            A student-led Community Engagement Project dedicated to building digital resilience, exposing social engineering tactics, and safeguarding citizen and customer privacy.
+          </p>
+          <div class="cep-badge-box">
+            <i class="fa-solid fa-graduation-cap" style="color: var(--primary); margin-right: 0.4rem;"></i>
+            <strong data-i18n="footer.badge.t">Community Engagement Project (CEP)</strong>
+            <div style="font-size: 0.78rem; margin-top: 0.2rem;" data-i18n="footer.badge.d">Focus: Cyber Awareness, Phishing Defense & DPDP Act Data Privacy</div>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4 data-i18n="footer.nav">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" data-i18n="nav.problem">The Problem</a></li>
+            <li><a href="cases-and-media.html" data-i18n="nav.cases">Real Cases & Videos</a></li>
+            <li><a href="solutions.html" data-i18n="nav.solutions">Solutions & Simulator</a></li>
+            <li><a href="solutions.html#interactive-sim" data-i18n="nav.test">Test Your Skills</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 data-i18n="footer.topics">Key Topics</h4>
+          <ul class="footer-links">
+            <li><a href="index.html#problem-breakdown">Smishing & SMS Spoofing</a></li>
+            <li><a href="cases-and-media.html#scenarios">Digital Arrest Scams</a></li>
+            <li><a href="solutions.html#customer-protection">Customer Data Protection</a></li>
+            <li><a href="solutions.html#emergency-response">National Helpline 1930</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 data-i18n="footer.help">Official Helplines</h4>
+          <p style="font-size: 0.84rem; color: var(--text-muted); margin-bottom: 0.65rem;" data-i18n="footer.help.desc">
+            Immediate assistance for cyber financial crimes in India:
+          </p>
+          <div style="margin-bottom: 0.65rem;">
+            <a href="tel:1930" class="btn btn-danger" style="width: 100%; font-size: 0.85rem; padding: 0.55rem;">
+              <i class="fa-solid fa-phone"></i> National Helpline: 1930
+            </a>
+          </div>
+          <a href="https://cybercrime.gov.in" target="_blank" rel="noopener" class="btn btn-secondary" style="width: 100%; font-size: 0.85rem; padding: 0.55rem;">
+            <i class="fa-solid fa-globe"></i> cybercrime.gov.in
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p data-i18n="footer.copy">© 2026 CyberGuard CEP. Developed for Community Digital Awareness. Educational Non-Commercial Project.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Language Selection Toast (Prompted on initial visit) -->
+  <div class="lang-toast-container" id="lang-toast">
+    <div class="lang-toast">
+      <div class="lang-toast-header">
+        <h4><i class="fa-solid fa-language" style="color: var(--primary);"></i> <span data-i18n="toast.title">Choose Your Language / भाषा निवडा / भाषा चुनें</span></h4>
+        <button class="lang-toast-close" aria-label="Close language selector">&times;</button>
+      </div>
+      <div class="lang-toast-body">
+        <p data-i18n="toast.desc">Welcome to CyberGuard Community Project. Please select your preferred reading language:</p>
+      </div>
+      <div class="lang-toast-options">
+        <button class="lang-toast-btn" data-lang="en">🇬🇧 English</button>
+        <button class="lang-toast-btn" data-lang="hi">🇮🇳 हिंदी</button>
+        <button class="lang-toast-btn" data-lang="mr">🚩 मराठी</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solutions & Defense Toolkit | CyberGuard CEP</title>
+  <meta name="description" content="Actionable solutions for phishing prevention, social engineering countermeasures, customer data protection rules, and interactive simulation drills.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Emergency Helpline Notification Bar -->
+  <div class="alert-strip">
+    <div class="container">
+      <div>
+        <i class="fa-solid fa-triangle-exclamation"></i> 
+        <strong data-i18n="alert.title">Actionable Protocol:</strong> 
+        <span data-i18n="alert.action">Golden hour response is crucial to freeze stolen funds across banking networks.</span>
+      </div>
+      <div>
+        <span data-i18n="alert.helpline">National Cyber Crime Helpline:</span> 
+        <a href="tel:1930" class="helpline-pill"><i class="fa-solid fa-phone"></i> <span data-i18n="alert.dial">Call 1930</span></a> 
+        or visit <a href="https://cybercrime.gov.in" target="_blank" rel="noopener">cybercrime.gov.in</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation Header -->
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a href="index.html" class="brand-logo">
+        <div class="brand-icon">
+          <i class="fa-solid fa-shield-halved"></i>
+        </div>
+        <span>CyberGuard <span class="brand-badge" data-i18n="brand.badge">CEP Initiative</span></span>
+      </a>
+
+      <button class="mobile-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link"><i class="fa-solid fa-bug"></i> <span data-i18n="nav.problem">The Problem</span></a></li>
+        <li><a href="cases-and-media.html" class="nav-link"><i class="fa-solid fa-video"></i> <span data-i18n="nav.cases">Real Cases & Videos</span></a></li>
+        <li><a href="solutions.html" class="nav-link active"><i class="fa-solid fa-lock"></i> <span data-i18n="nav.solutions">Solutions & Simulator</span></a></li>
+        <li><a href="#interactive-sim" class="btn btn-primary" style="padding: 0.45rem 0.9rem; font-size: 0.82rem;"><i class="fa-solid fa-crosshairs"></i> <span data-i18n="nav.test">Test Your Skills</span></a></li>
+      </ul>
+
+      <!-- Controls Hub: Language Switcher + Theme Toggle -->
+      <div class="nav-controls">
+        <div class="lang-switch" title="Change Language / भाषा बदला">
+          <button class="lang-btn active" data-lang="en">EN</button>
+          <button class="lang-btn" data-lang="hi">हिंदी</button>
+          <button class="lang-btn" data-lang="mr">मराठी</button>
+        </div>
+
+        <button class="theme-toggle-btn" aria-label="Toggle dark/light theme" title="Toggle theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Banner -->
+  <section class="hero" style="padding: 3.5rem 0 2.5rem;">
+    <div class="container" style="text-align: center; max-width: 820px;">
+      <span class="section-tag success"><i class="fa-solid fa-shield-check"></i> <span data-i18n="sol.hero.tag">Actionable Community Defense</span></span>
+      <h1 class="hero-title" data-i18n="sol.hero.title">From Vulnerability to Resilience: The Solution Playbook</h1>
+      <p class="hero-lead" style="margin: 0 auto 1.25rem;" data-i18n="sol.hero.lead">
+        Technology alone cannot defend against psychological manipulation. Here is the concrete, three-tiered solution framework for citizens, businesses protecting customer data, and immediate victims of fraud.
+      </p>
+      <div style="display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap;">
+        <a href="#interactive-sim" class="btn btn-primary"><i class="fa-solid fa-gamepad"></i> <span data-i18n="sol.btn.sim">Launch Phishing Simulator</span></a>
+        <a href="#customer-protection" class="btn btn-secondary"><i class="fa-solid fa-database"></i> <span data-i18n="sol.btn.dpdp">Customer Data Protection</span></a>
+        <a href="#emergency-response" class="btn btn-danger"><i class="fa-solid fa-phone"></i> <span data-i18n="sol.btn.plan">Emergency Action Plan</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Phishing Simulator Section -->
+  <section class="problems-section" id="interactive-sim">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-microscope"></i> <span data-i18n="sim.tag">Interactive Drill</span></span>
+        <h2 class="section-title" data-i18n="sim.title">Spot The Phish: Live Diagnostic Challenge</h2>
+        <p class="section-desc" data-i18n="sim.desc">
+          Test your scam detection reflexes against realistic communications modeled on real-world Indian cyber scams. Inspect each scenario, check the headers, and decide if it is a legitimate message or a fraudulent trap.
+        </p>
+      </div>
+
+      <!-- Mount point for JavaScript simulator -->
+      <div id="phishing-sim-container">
+        <!-- Rendered dynamically by js/main.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Personal Cyber Hygiene Framework -->
+  <section style="padding: 4.5rem 0; background-color: var(--bg-page); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag success"><i class="fa-solid fa-user-shield"></i> <span data-i18n="slcd.tag">Individual Defense</span></span>
+        <h2 class="section-title" data-i18n="slcd.title">The 'SLCD' Personal Defense Protocol</h2>
+        <p class="section-desc" data-i18n="slcd.desc">
+          A simple, memorable 4-step mental firewall that community members can apply whenever confronted with urgent digital demands.
+        </p>
+      </div>
+
+      <div class="cards-grid">
+        <div class="card">
+          <div class="card-icon blue"><i class="fa-solid fa-hand"></i></div>
+          <h3 class="card-title" data-i18n="slcd.s1.t">1. S - Stop</h3>
+          <p class="card-text" data-i18n="slcd.s1.d">
+            Whenever a message conveys immense urgency ('A/C blocked in 2 hours', 'Arrest warrant issued', 'Electricity cut tonight'), intentionally pause. Urgency is designed to hijack your amygdala and bypass logical skepticism.
+          </p>
+          <div class="threat-meta">
+            <div class="threat-item">
+              <span style="color: var(--success); margin-right: 0.3rem;">✔</span> 
+              <span data-i18n="slcd.s1.b">Take a deep breath; no legitimate authority requires a 5-minute deadline.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-icon amber"><i class="fa-solid fa-magnifying-glass"></i></div>
+          <h3 class="card-title" data-i18n="slcd.s2.t">2. L - Look</h3>
+          <p class="card-text" data-i18n="slcd.s2.d">
+            Inspect sender credentials closely. Check the actual email domain address (e.g., does it say @sbi.co.in or @sbi-support-portal.net?). In SMS, verify whether the sender code is a legitimate 6-character header or a standard 10-digit phone number.
+          </p>
+          <div class="threat-meta">
+            <div class="threat-item">
+              <span style="color: var(--success); margin-right: 0.3rem;">✔</span> 
+              <span data-i18n="slcd.s2.b">Scrutinize URLs for hidden characters, bit.ly shorteners, or spelling errors.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-icon emerald"><i class="fa-solid fa-phone-slash"></i></div>
+          <h3 class="card-title" data-i18n="slcd.s3.t">3. C - Call & Check</h3>
+          <p class="card-text" data-i18n="slcd.s3.d">
+            Never call the phone number provided inside the suspicious SMS or email. Instead, independently look up the official contact number from the back of your debit card or the official portal, and call them directly to verify.
+          </p>
+          <div class="threat-meta">
+            <div class="threat-item">
+              <span style="color: var(--success); margin-right: 0.3rem;">✔</span> 
+              <span data-i18n="slcd.s3.b">Out-of-band verification destroys 99% of social engineering attacks.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-icon red"><i class="fa-solid fa-shield-virus"></i></div>
+          <h3 class="card-title" data-i18n="slcd.s4.t">4. D - Decide & Defend</h3>
+          <p class="card-text" data-i18n="slcd.s4.d">
+            If anything feels suspicious, immediately block the number, report the message as spam/phishing, and never enter OTPs, passwords, or scan unknown QR codes. If compromised, contact 1930 instantly.
+          </p>
+          <div class="threat-meta">
+            <div class="threat-item">
+              <span style="color: var(--success); margin-right: 0.3rem;">✔</span> 
+              <span data-i18n="slcd.s4.b">Remember: Entering a UPI PIN always deducts funds, never receives money.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Customer Data Protection (DPDP Framework) Section -->
+  <section class="problems-section" id="customer-protection">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-building-shield"></i> <span data-i18n="dpdp.tag">Organizational & Merchant Security</span></span>
+        <h2 class="section-title" data-i18n="dpdp.title">Customer Data Protection: Best Practices & DPDP Act</h2>
+        <p class="section-desc" data-i18n="dpdp.desc">
+          Community businesses, coaching centers, clinics, and local startups frequently handle sensitive customer data. Protecting this data is both an ethical responsibility and a legal mandate under India's Digital Personal Data Protection (DPDP) Act 2023.
+        </p>
+      </div>
+
+      <div class="protection-pillars">
+        <!-- Pillar 1 -->
+        <div class="pillar-card">
+          <span class="pillar-num">01</span>
+          <div class="card-icon blue"><i class="fa-solid fa-filter"></i></div>
+          <h3 style="font-size: 1.2rem; margin-bottom: 0.65rem; color: var(--text-main);" data-i18n="dpdp.p1.t">Data Minimization</h3>
+          <p style="font-size: 0.9rem; color: var(--text-muted);" data-i18n="dpdp.p1.d">
+            Collect only the customer information that is strictly required to fulfill the service. Do not demand Aadhaar or PAN copies unless required by banking regulation.
+          </p>
+          <ul class="checklist">
+            <li><i class="fa-solid fa-circle-check check-icon"></i> <span data-i18n="dpdp.p1.i1">No Unnecessary KYC: Avoid collecting identity cards for routine retail sales.</span></li>
+            <li><i class="fa-solid fa-circle-check check-icon"></i> <span data-i18n="dpdp.p1.i2">Purpose Limitation: Use customer numbers only for billing, not promo calls.</span></li>
+            <li><i class="fa-solid fa-circle-check check-icon"></i> <span data-i18n="dpdp.p1.i3">Timely Deletion: Purge customer logs and inquiry files after active service concludes.</span></li>
+          </ul>
+        </div>
+
+        <!-- Pillar 2 -->
+        <div class="pillar-card">
+          <span class="pillar-num">02</span>
+          <div class="card-icon emerald"><i class="fa-solid fa-key"></i></div>
+          <h3 style="font-size: 1.2rem; margin-bottom: 0.65rem; color: var(--text-main);" data-i18n="dpdp.p2.t">Storage & Access Control</h3>
+          <p style="font-size: 0.9rem; color: var(--text-muted);" data-i18n="dpdp.p2.d">
+            Prevent internal leaks and unauthorized exposure by replacing unencrypted spreadsheets with access-controlled, encrypted databases.
+          </p>
+          <ul class="checklist">
+            <li><i class="fa-solid fa-circle-check check-icon"></i> <span data-i18n="dpdp.p2.i1">No Plaintext Spreadsheets: Never leave customer lists in public cloud folders.</span></li>
+            <li><i class="fa-solid fa-circle-check check-icon"></i> <span data-i18n="dpdp.p2.i2">Role-Based Access (RBAC): Only authorized staff should access customer records.</span></li>
+            <li><i class="fa-solid fa-circle-check check-icon"></i> <span data-i18n="dpdp.p2.i3">Mandatory 2FA: Enforce Multi-Factor Authentication for all business CRM and email logins.</span></li>
+          </ul>
+        </div>
+
+        <!-- Pillar 3 -->
+        <div class="pillar-card">
+          <span class="pillar-num">03</span>
+          <div class="card-icon amber"><i class="fa-solid fa-scale-balanced"></i></div>
+          <h3 style="font-size: 1.2rem; margin-bottom: 0.65rem; color: var(--text-main);" data-i18n="dpdp.p3.t">Compliance & Breach Plan</h3>
+          <p style="font-size: 0.9rem; color: var(--text-muted);" data-i18n="dpdp.p3.d">
+            Align with India's DPDP Act obligations and maintain an immediate incident response plan if customer data is compromised.
+          </p>
+          <ul class="checklist">
+            <li><i class="fa-solid fa-circle-check check-icon"></i> <span data-i18n="dpdp.p3.i1">Explicit Consent: Provide transparent notice explaining why data is collected.</span></li>
+            <li><i class="fa-solid fa-circle-check check-icon"></i> <span data-i18n="dpdp.p3.i2">Breach Notification: Notify the Data Protection Board and users promptly.</span></li>
+            <li><i class="fa-solid fa-circle-check check-icon"></i> <span data-i18n="dpdp.p3.i3">Staff Awareness Drills: Train retail staff against social engineering and pretext callers.</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Vulnerability Calculator / Assessment -->
+  <section style="padding: 4rem 0; background-color: var(--bg-page); border-top: 1px solid var(--border-color);">
+    <div class="container">
+      <div style="background-color: var(--bg-surface); border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 2.25rem; max-width: 820px; margin: 0 auto; box-shadow: var(--shadow-sm);">
+        <div style="text-align: center; margin-bottom: 1.75rem;">
+          <span class="section-tag"><i class="fa-solid fa-chart-pie"></i> <span data-i18n="calc.tag">Self Assessment</span></span>
+          <h2 style="font-size: 1.6rem; margin: 0.4rem 0; color: var(--text-main);" data-i18n="calc.title">Quick Digital Vulnerability Calculator</h2>
+          <p style="color: var(--text-muted); font-size: 0.92rem;" data-i18n="calc.desc">Answer 4 simple questions to calculate your current social engineering risk profile.</p>
+        </div>
+
+        <form id="risk-calc-form" style="display: flex; flex-direction: column; gap: 1.25rem;">
+          <div>
+            <label style="display: block; font-weight: 600; margin-bottom: 0.45rem; color: var(--text-main); font-size: 0.94rem;" data-i18n="calc.q1">1. Do you reuse the same password or variations across multiple websites?</label>
+            <div style="display: flex; gap: 1.5rem; font-size: 0.9rem;">
+              <label><input type="radio" name="q_pwd" value="yes" required> <span data-i18n="calc.q1.y">Yes, I do</span></label>
+              <label><input type="radio" name="q_pwd" value="no"> <span data-i18n="calc.q1.n">No, I use unique passwords / password manager</span></label>
+            </div>
+          </div>
+
+          <div>
+            <label style="display: block; font-weight: 600; margin-bottom: 0.45rem; color: var(--text-main); font-size: 0.94rem;" data-i18n="calc.q2">2. Do you have Two-Factor Authentication (2FA / OTP) enabled on your primary email and UPI/bank apps?</label>
+            <div style="display: flex; gap: 1.5rem; font-size: 0.9rem;">
+              <label><input type="radio" name="q_2fa" value="yes" required> <span data-i18n="calc.q2.y">Yes, everywhere possible</span></label>
+              <label><input type="radio" name="q_2fa" value="no"> <span data-i18n="calc.q2.n">No, or only on some apps</span></label>
+            </div>
+          </div>
+
+          <div>
+            <label style="display: block; font-weight: 600; margin-bottom: 0.45rem; color: var(--text-main); font-size: 0.94rem;" data-i18n="calc.q3">3. Have you ever clicked on a link in an SMS or WhatsApp without inspecting the full domain name?</label>
+            <div style="display: flex; gap: 1.5rem; font-size: 0.9rem;">
+              <label><input type="radio" name="q_links" value="yes" required> <span data-i18n="calc.q3.y">Yes, sometimes in a rush</span></label>
+              <label><input type="radio" name="q_links" value="no"> <span data-i18n="calc.q3.n">Never, I always verify</span></label>
+            </div>
+          </div>
+
+          <div>
+            <label style="display: block; font-weight: 600; margin-bottom: 0.45rem; color: var(--text-main); font-size: 0.94rem;" data-i18n="calc.q4">4. Has someone on a phone call ever asked you to read an OTP or download AnyDesk/QuickSupport?</label>
+            <div style="display: flex; gap: 1.5rem; font-size: 0.9rem;">
+              <label><input type="radio" name="q_otp" value="yes" required> <span data-i18n="calc.q4.y">Yes, and I shared / considered it</span></label>
+              <label><input type="radio" name="q_otp" value="no"> <span data-i18n="calc.q4.n">No, or I immediately disconnected</span></label>
+            </div>
+          </div>
+
+          <div style="text-align: center; margin-top: 0.75rem;">
+            <button type="submit" class="btn btn-primary" style="padding: 0.65rem 1.75rem;">
+              <i class="fa-solid fa-calculator"></i> <span data-i18n="calc.btn">Calculate My Vulnerability Score</span>
+            </button>
+          </div>
+        </form>
+
+        <div id="risk-calc-result" style="margin-top: 1.5rem; display: none;"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Emergency Response & Helpline Action Plan -->
+  <section class="problems-section" id="emergency-response">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag danger"><i class="fa-solid fa-triangle-exclamation"></i> <span data-i18n="step.tag">Incident Protocol</span></span>
+        <h2 class="section-title" data-i18n="step.title">What to Do If You or a Community Member Get Scammed</h2>
+        <p class="section-desc" data-i18n="step.desc">
+          Time is the single most decisive factor in recovering stolen funds. Follow this emergency response ladder immediately.
+        </p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.25rem; margin-bottom: 3rem;">
+        <div class="comp-box" style="border-top: 4px solid var(--danger);">
+          <div style="font-size: 1.15rem; font-weight: 700; color: var(--text-main); margin-bottom: 0.4rem;" data-i18n="step1.t">Step 1: Golden Hour Call</div>
+          <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 1rem;" data-i18n="step1.d">
+            Dial 1930 immediately. The Citizen Financial Cyber Fraud Reporting System can freeze recipient accounts in real-time across participating banks before the cash is laundered.
+          </p>
+          <a href="tel:1930" class="btn btn-danger" style="font-size: 0.82rem; padding: 0.45rem 0.8rem; width: 100%;" data-i18n="step1.b">Call 1930 Now</a>
+        </div>
+
+        <div class="comp-box" style="border-top: 4px solid var(--warning);">
+          <div style="font-size: 1.15rem; font-weight: 700; color: var(--text-main); margin-bottom: 0.4rem;" data-i18n="step2.t">Step 2: Bank Block</div>
+          <p style="font-size: 0.88rem; color: var(--text-muted);" data-i18n="step2.d">
+            Log into your mobile banking app or call your bank's toll-free emergency number to immediately freeze your netbanking, block debit/credit cards, and reset UPI PINs.
+          </p>
+        </div>
+
+        <div class="comp-box" style="border-top: 4px solid var(--primary);">
+          <div style="font-size: 1.15rem; font-weight: 700; color: var(--text-main); margin-bottom: 0.4rem;" data-i18n="step3.t">Step 3: Lodge Online FIR</div>
+          <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 1rem;" data-i18n="step3.d">
+            File an official complaint at cybercrime.gov.in. Upload transaction reference numbers, screenshots of chats, fake websites, and phone numbers.
+          </p>
+          <a href="https://cybercrime.gov.in" target="_blank" rel="noopener" class="btn btn-secondary" style="font-size: 0.82rem; padding: 0.45rem 0.8rem; width: 100%;" data-i18n="step3.b">Open Portal</a>
+        </div>
+
+        <div class="comp-box" style="border-top: 4px solid var(--success);">
+          <div style="font-size: 1.15rem; font-weight: 700; color: var(--text-main); margin-bottom: 0.4rem;" data-i18n="step4.t">Step 4: Device Cleanup</div>
+          <p style="font-size: 0.88rem; color: var(--text-muted);" data-i18n="step4.d">
+            If you installed any remote software (AnyDesk, TeamViewer, APK files), uninstall them immediately, run a malware scan, and perform a factory reset if necessary.
+          </p>
+        </div>
+      </div>
+
+      <!-- Emergency Hotline Card -->
+      <div class="emergency-card">
+        <div class="emergency-info">
+          <h3 data-i18n="hotline.title">National Cyber Crime Reporting Portal</h3>
+          <p data-i18n="hotline.desc">
+            Managed by the Indian Cyber Crime Coordination Centre (I4C), Ministry of Home Affairs (MHA), Government of India. Dedicated to fast inter-bank coordination and citizen fraud intervention.
+          </p>
+        </div>
+        <div class="emergency-number-box">
+          <span style="font-size: 0.75rem; text-transform: uppercase; color: var(--text-muted); letter-spacing: 0.04em;" data-i18n="hotline.lbl">Toll-Free Helpline</span>
+          <span class="emergency-number">1930</span>
+          <span style="font-size: 0.75rem; color: var(--danger);" data-i18n="hotline.sub">Available 24x7 Across India</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="brand-logo" style="margin-bottom: 0.85rem;">
+            <div class="brand-icon"><i class="fa-solid fa-shield-halved"></i></div>
+            <span>CyberGuard CEP</span>
+          </div>
+          <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 1.25rem;" data-i18n="footer.desc">
+            A student-led Community Engagement Project dedicated to building digital resilience, exposing social engineering tactics, and safeguarding citizen and customer privacy.
+          </p>
+          <div class="cep-badge-box">
+            <i class="fa-solid fa-graduation-cap" style="color: var(--primary); margin-right: 0.4rem;"></i>
+            <strong data-i18n="footer.badge.t">Community Engagement Project (CEP)</strong>
+            <div style="font-size: 0.78rem; margin-top: 0.2rem;" data-i18n="footer.badge.d">Practical toolkits for community workshops and digital defense.</div>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4 data-i18n="footer.nav">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" data-i18n="nav.problem">The Problem</a></li>
+            <li><a href="cases-and-media.html" data-i18n="nav.cases">Real Cases & Videos</a></li>
+            <li><a href="solutions.html" data-i18n="nav.solutions">Solutions & Simulator</a></li>
+            <li><a href="#interactive-sim" data-i18n="nav.test">Test Your Skills</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 data-i18n="footer.topics">Key Topics</h4>
+          <ul class="footer-links">
+            <li><a href="#interactive-sim" data-i18n="sim.title">Interactive Simulator</a></li>
+            <li><a href="#customer-protection" data-i18n="dpdp.title">DPDP Act Compliance</a></li>
+            <li><a href="#risk-calc-form" data-i18n="calc.title">Vulnerability Calculator</a></li>
+            <li><a href="#emergency-response" data-i18n="step.title">National Helpline: 1930</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 data-i18n="footer.help">Official Helplines</h4>
+          <p style="font-size: 0.84rem; color: var(--text-muted); margin-bottom: 0.65rem;" data-i18n="footer.help.desc">
+            Immediate assistance for cyber financial crimes in India:
+          </p>
+          <div style="margin-bottom: 0.65rem;">
+            <a href="tel:1930" class="btn btn-danger" style="width: 100%; font-size: 0.85rem; padding: 0.55rem;">
+              <i class="fa-solid fa-phone"></i> National Helpline: 1930
+            </a>
+          </div>
+          <a href="https://cybercrime.gov.in" target="_blank" rel="noopener" class="btn btn-secondary" style="width: 100%; font-size: 0.85rem; padding: 0.55rem;">
+            <i class="fa-solid fa-globe"></i> cybercrime.gov.in
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p data-i18n="footer.copy">© 2026 CyberGuard CEP. Developed for Community Digital Awareness. Educational Non-Commercial Project.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Language Selection Toast -->
+  <div class="lang-toast-container" id="lang-toast">
+    <div class="lang-toast">
+      <div class="lang-toast-header">
+        <h4><i class="fa-solid fa-language" style="color: var(--primary);"></i> <span data-i18n="toast.title">Choose Your Language / भाषा निवडा / भाषा चुनें</span></h4>
+        <button class="lang-toast-close" aria-label="Close language selector">&times;</button>
+      </div>
+      <div class="lang-toast-body">
+        <p data-i18n="toast.desc">Welcome to CyberGuard Community Project. Please select your preferred reading language:</p>
+      </div>
+      <div class="lang-toast-options">
+        <button class="lang-toast-btn" data-lang="en">🇬🇧 English</button>
+        <button class="lang-toast-btn" data-lang="hi">🇮🇳 हिंदी</button>
+        <button class="lang-toast-btn" data-lang="mr">🚩 मराठी</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
