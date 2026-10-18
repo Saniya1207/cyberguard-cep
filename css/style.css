@@ -103,7 +103,6 @@ html {
   scroll-behavior: smooth;
   font-size: 16px;
   -webkit-text-size-adjust: 100%;
-  overflow-x: hidden;
   width: 100%;
 }
 
@@ -114,9 +113,13 @@ body {
   line-height: 1.6;
   transition: background-color 0.25s ease, color 0.25s ease;
   min-height: 100vh;
-  overflow-x: hidden;
   width: 100%;
   position: relative;
+}
+
+/* Prevent horizontal scrollbars without breaking position: sticky */
+html, body {
+  overflow-x: clip;
 }
 
 a {
@@ -184,9 +187,10 @@ img {
 
 /* --- SITE HEADER & RESPONSIVE NAVBAR --- */
 .site-header {
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
-  z-index: 1000;
+  z-index: 2000;
   background-color: var(--header-bg);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
@@ -1495,6 +1499,7 @@ img {
 /* --- MOBILE & PHABLETS (max-width: 768px) --- */
 @media (max-width: 768px) {
   .site-header {
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
     left: 0;
